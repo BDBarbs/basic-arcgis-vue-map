@@ -44,7 +44,7 @@ const geoJSON = {
         IN_PROGRAM_NETWORK: 1,
         NAME: "Chuckles",
         ID: 2345678,
-        PROV_SUPERTYPE: "Type LOL",
+        SUPERTYPE: "Type LOL",
       },
     },
     {

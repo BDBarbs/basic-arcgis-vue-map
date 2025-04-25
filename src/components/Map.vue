@@ -20,7 +20,7 @@
 /*
   Imports
  */
-import { onMounted, ref } from "vue";
+import { onMounted } from "vue";
 import Map from "@arcgis/core/Map";
 import MapView from "@arcgis/core/views/MapView";
 import GeoJSONLayer from "@arcgis/core/layers/GeoJSONLayer";
@@ -61,22 +61,6 @@ const geoJSON = {
         NAME: "Chuckles 2",
         ID: 2345679,
         SUPERTYPE: "Type LOL 2",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-95.3698, 29.7604],
-      },
-      properties: {
-        CITY: "Houston",
-        PROGRAM: "Space City Smiles",
-        SBPRGRM: "Subprogram Giggles",
-        IN_PROGRAM_NETWORK: 1,
-        NAME: "Haha",
-        ID: 3456789,
-        SUPERTYPE: "Type ROFL",
       },
     },
     {
@@ -217,7 +201,4 @@ onMounted(() => {
   width: 100%;
 }
 
-.radio-text {
-  font-size: 0.75rem !important;
-}
 </style>
